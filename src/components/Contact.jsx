@@ -13,7 +13,7 @@ const Contact = () => {
         e.preventDefault();
 
         // Your specific Google Apps Script URL
-        const scriptUrl = "https://script.google.com/macros/s/AKfycbyLDvj44FZB4sFv6F4_fAe80tZsKFemPouPJnMcUIp2UTX-fq-_qBzmeViQvKNzF5OjgQ/exec";
+        const scriptUrl = "https://script.google.com/macros/s/AKfycbwkWnZov0swvKDrpOmwlQ9FQ_TAhyj0J63r72cppcNJeU3DIcpLAuNVr8KXHbY3_u5ShQ/exec";
 
         try {
             // We use 'no-cors' to bypass browser security blocks.
