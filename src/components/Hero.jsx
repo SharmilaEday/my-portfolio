@@ -41,7 +41,7 @@ const Hero = () => {
                         <a href="https://linkedin.com/in/sharmilaeday" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <Linkedin size={24} />
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://github.com/SharmilaEday" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <Github size={24} />
                         </a>
                         <a href="mailto:sharmilaeday26@gmail.com" className="social-icon">
