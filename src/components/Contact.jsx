@@ -29,21 +29,21 @@ const Contact = () => {
                             <Mail className="method-icon" size={24} />
                             <div>
                                 <h4>Email</h4>
-                                <a href="mailto:SupriyaVeerla25@gmail.com">SupriyaVeerla25@gmail.com</a>
+                                <a href="mailto:sharmilaeday26@gmail.com">sharmilaeday26@gmail.com</a>
                             </div>
                         </div>
                         <div className="method">
                             <Linkedin className="method-icon" size={24} />
                             <div>
                                 <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com/in/supriya-veerla" target="_blank" rel="noopener noreferrer">in/supriya-veerla</a>
+                                <a href="https://www.linkedin.com/in/sharmilaeday/" target="_blank" rel="noopener noreferrer">in/sharmila-eday</a>
                             </div>
                         </div>
                         <div className="method">
                             <Github className="method-icon" size={24} />
                             <div>
                                 <h4>GitHub</h4>
-                                <a href="https://github.com/mesupriya" target="_blank" rel="noopener noreferrer">github/mesupriya</a>
+                                <a href="https://github.com/SharmilaEday" target="_blank" rel="noopener noreferrer">github/SharmilaEday</a>
                             </div>
                         </div>
                     </div>
