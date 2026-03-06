@@ -1,0 +1,80 @@
+.footer {
+    padding: 60px 20px;
+    background-color: var(--bg-sub);
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer-brand .logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.scroll-up {
+    position: absolute;
+    right: 0;
+    top: -90px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+    transition: var(--transition);
+}
+
+.scroll-up:hover {
+    transform: translateY(-5px);
+    background: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .scroll-up {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .scroll-up:hover {
+        transform: translateX(50%) translateY(-5px);
+    }
+}

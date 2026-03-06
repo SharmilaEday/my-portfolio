@@ -1,0 +1,119 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    border: none;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+    height: 60px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-item {
+    font-weight: 500;
+    color: var(--text-main);
+    opacity: 0.8;
+}
+
+.nav-item:hover {
+    color: var(--primary);
+    opacity: 1;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-main);
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background-color: var(--bg-sub);
+    color: var(--primary);
+}
+
+.mobile-actions {
+    display: none;
+    gap: 10px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-main);
+}
+
+.mobile-menu {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-150%);
+    transition: var(--transition);
+    z-index: -1;
+    border-top: 1px solid var(--border);
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-actions {
+        display: flex;
+    }
+
+    .mobile-menu a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
