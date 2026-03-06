@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-brand">
-                    <span className="logo-text">SV.</span>
+                    <span className="logo-text">SE.</span>
                     <p>© {new Date().getFullYear()} Sharmila Eday. All rights reserved.</p>
                 </div>
 
