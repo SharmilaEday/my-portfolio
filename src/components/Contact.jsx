@@ -10,27 +10,33 @@ const Contact = () => {
     });
 
     const handleSubmit = async (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbyLDvj44FZB4sFv6F4_fAe80tZsKFemPouPJnMcUIp2UTX-fq-_qBzmeViQvKNzF5OjgQ/exec", {
-            method: "POST",
-            body: JSON.stringify(formData),
-        });
+        // The URL of your Google Apps Script
+        const scriptUrl = "https://script.google.com/macros/s/AKfycbyLDvj44FZB4sFv6F4_fAe80tZsKFemPouPJnMcUIp2UTX-fq-_qBzmeViQvKNzF5OjgQ/exec";
 
-        const result = await response.json();
+        try {
+            // We use 'no-cors' to prevent the browser from blocking the request.
+            // Note: In 'no-cors' mode, we won't be able to read the JSON response,
+            // so we assume success if the fetch doesn't throw an error.
+            await fetch(scriptUrl, {
+                method: "POST",
+                mode: "no-cors", 
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
 
-        if (result.result === 'success') {
-            alert('Message sent! Check your Google Sheet and Email.');
+            // Success feedback
+            alert('Thank you! Your message has been sent to my Google Sheet.');
             setFormData({ name: '', email: '', message: '' });
-        } else {
-            alert('Something went wrong. Please try again.');
+            
+        } catch (error) {
+            console.error("Error!", error.message);
+            alert('There was an error sending your message. Please try again or email me directly.');
         }
-    } catch (error) {
-        console.error("Error!", error.message);
-        alert('There was an error sending your message.');
-    }
-};
+    };
 
     return (
         <section className="contact" id="contact">
