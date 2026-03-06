@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="footer-links">
                     <a href="https://www.linkedin.com/in/sharmilaeday/" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
                     <a href="https://github.com/SharmilaEday" target="_blank" rel="noopener noreferrer"><Github size={20} /></a>
-                    <a href="sharmilaeday26@gmail.com"><Mail size={20} /></a>
+                    <a href="mailto:sharmilaeday26@gmail.com"><Mail size={20} /></a>
                 </div>
 
                 <button className="scroll-up" onClick={scrollToTop}>
