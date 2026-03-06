@@ -12,29 +12,30 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // The URL of your Google Apps Script
+        // Your specific Google Apps Script URL
         const scriptUrl = "https://script.google.com/macros/s/AKfycbyLDvj44FZB4sFv6F4_fAe80tZsKFemPouPJnMcUIp2UTX-fq-_qBzmeViQvKNzF5OjgQ/exec";
 
         try {
-            // We use 'no-cors' to prevent the browser from blocking the request.
-            // Note: In 'no-cors' mode, we won't be able to read the JSON response,
-            // so we assume success if the fetch doesn't throw an error.
+            // We use 'no-cors' to bypass browser security blocks.
+            // This means we cannot read the response from Google, but the data still arrives.
             await fetch(scriptUrl, {
                 method: "POST",
-                mode: "no-cors", 
+                mode: "no-cors",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(formData),
             });
 
-            // Success feedback
-            alert('Thank you! Your message has been sent to my Google Sheet.');
+            // Since we are in 'no-cors' mode, we assume success if the fetch doesn't fail.
+            alert('Thank you! Your message has been sent successfully.');
+            
+            // Clear the form fields
             setFormData({ name: '', email: '', message: '' });
             
         } catch (error) {
-            console.error("Error!", error.message);
-            alert('There was an error sending your message. Please try again or email me directly.');
+            console.error("Submission Error:", error);
+            alert('There was a network error. Please try again or email me directly.');
         }
     };
 
