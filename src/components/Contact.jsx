@@ -9,12 +9,28 @@ const Contact = () => {
         message: ''
     });
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // In a real app, you'd send this to a service
-        console.log('Form submitted:', formData);
-        alert('Thank you for reaching out! This is a demo submission.');
-    };
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbyLDvj44FZB4sFv6F4_fAe80tZsKFemPouPJnMcUIp2UTX-fq-_qBzmeViQvKNzF5OjgQ/exec", {
+            method: "POST",
+            body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (result.result === 'success') {
+            alert('Message sent! Check your Google Sheet and Email.');
+            setFormData({ name: '', email: '', message: '' });
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
+    } catch (error) {
+        console.error("Error!", error.message);
+        alert('There was an error sending your message.');
+    }
+};
 
     return (
         <section className="contact" id="contact">
