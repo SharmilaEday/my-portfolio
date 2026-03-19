@@ -14,11 +14,11 @@ const Skills = () => {
         },
         {
             title: "Cloud & MLOps",
-            skills: ["AWS (SageMaker, Lambda)", "GCP (Vertex AI)", "Azure ML", "Docker", "Kubernetes", "CI/CD Pipelines"]
+            skills: ["AWS (SageMaker, Lambda, BedRock)", "GCP (Vertex AI)", "Azure ML", "Docker", "Kubernetes", "CI/CD Pipelines"]
         },
         {
             title: "Data Eng & Visualization",
-            skills: ["Python", "Pandas/NumPy", "PySpark", "SQL", "Tableau", "Power BI", "EDA"]
+            skills: ["Python", "Pandas/NumPy", "PySpark", "SQL", "Tableau", "Power BI"]
         }
     ];
 
