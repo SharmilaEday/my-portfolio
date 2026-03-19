@@ -131,7 +131,7 @@ const Projects = () => {
                         </div>
 
                         <div className="project-body">
-                            <span className="project-category">{project.categories.join(' · ')}</span>
+                            <span className="project-category">{project.category.join(' · ')}</span>
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-desc">{project.desc}</p>
 
