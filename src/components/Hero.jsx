@@ -15,14 +15,14 @@ const Hero = () => {
                     <span className="hero-greeting">Hi, I'm</span>
                     <h1 className="hero-name">Sharmila Eday</h1>
                     <h2 className="hero-title">
-                        AI Engineer <span className="separator">|</span> Generative AI Developer
+                        Artificial Intelligence Engineer <span className="separator">|</span> Generative AI Developer
                     </h2>
                     <p className="hero-tagline">
-                        Building intelligent systems at the intersection of Generative AI, machine learning, and data science.
+                        I build AI systems that ship from fine-tuned models to production pipelines, with measurable results
                     </p>
                     <p className="hero-description">
-                        Artificial Intelligence graduate student at the University of North Texas working on generative AI applications,
-                        LLMs, and scalable AI solutions.
+                        MS AI student at UNT (May 2026) and Graduate Research Assistant, building scalable LLM systems and Agentic AI. 
+                        Previously recognized as a top 1% AI intern at Microsoft India.
                     </p>
 
                     <div className="hero-ctas">
@@ -61,22 +61,22 @@ const Hero = () => {
                     <div className="card-item">
                         <div className="icon-box ai"></div>
                         <div>
-                            <p className="card-label">Machine Learning</p>
-                            <p className="card-value">Predictive Analytics</p>
+                            <p className="card-label">Generative AI</p>
+                            <p className="card-value">LLMs & RAG</p>
                         </div>
                     </div>
                     <div className="card-item">
                         <div className="icon-box genai"></div>
                         <div>
-                            <p className="card-label">Generative AI</p>
-                            <p className="card-value">LLM & RAG</p>
+                            <p className="card-label">Computer Vision</p>
+                            <p className="card-value">Image & Detection</p>
                         </div>
                     </div>
                     <div className="card-item">
                         <div className="icon-box health"></div>
                         <div>
-                            <p className="card-label">Healthcare AI</p>
-                            <p className="card-value">Monitoring Systems</p>
+                            <p className="card-label">NLP</p>
+                            <p className="card-value">Transformers and Model Fine-tuning</p>
                         </div>
                     </div>
                 </div>
