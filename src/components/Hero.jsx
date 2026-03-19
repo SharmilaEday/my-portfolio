@@ -15,7 +15,7 @@ const Hero = () => {
                     <span className="hero-greeting">Hi, I'm</span>
                     <h1 className="hero-name">Sharmila Eday</h1>
                     <h2 className="hero-title">
-                        Artificial Intelligence Engineer <span className="separator">|</span> Generative AI Developer
+                        AI Engineer <span className="separator">|</span> Generative AI Developer
                     </h2>
                     <p className="hero-tagline">
                         I build AI systems that ship from fine-tuned models to production pipelines, with measurable results
@@ -75,8 +75,8 @@ const Hero = () => {
                     <div className="card-item">
                         <div className="icon-box health"></div>
                         <div>
-                            <p className="card-label">NLP</p>
-                            <p className="card-value">Transformers and Model Fine-tuning</p>
+                            <p className="card-label">MLOps</p>
+                            <p className="card-value">Cloud & Deployment</p>
                         </div>
                     </div>
                 </div>
