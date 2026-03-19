@@ -9,14 +9,14 @@ const About = () => {
             school: "University of North Texas",
             location: "USA",
             period: "May 2026",
-            details: "GPA: 4.00/4.00. Focus: ML, Deep Learning, NLP, GenAI, Big Data."
+            details: "GPA: 4.00/4.00. Focus: NLP, GenAI, MLOps, Big Data, Computer Vision."
         },
         {
             degree: "Bachelor of Technology in Electronics and Communication Engineering",
             school: "Jawaharlal Nehru Technological University",
             location: "India",
             period: "May 2024",
-            details: "Foundation in Data Structures and Algorithms, Probability Fundamentals, Statistics."
+            details: "Focus: Data Structures and Algorithms, Probability Fundamentals, Statistics."
         }
     ];
 
@@ -31,14 +31,12 @@ const About = () => {
             <div className="about-grid">
                 <div className="about-text">
                     <p>
-                        I am an **AI Engineer and Generative AI Developer** currently pursuing my Master’s in Artificial Intelligence at the
-                        University of North Texas. My work focuses on building high-impact intelligent systems that bridge
-                        the gap between complex data and real-world utility.
+                        I'm an AI Engineer and Generative AI Developer completing my MS in Artificial Intelligence at the University of North Texas (GPA: 4.0, May 2026). 
+                        As a Graduate Research Assistant, I build and deploy LLM-based systems on GCP turning research into production-ready AI.
                     </p>
                     <p>
-                        With experience spanning from **academic research in Generative AI** to internships in **Computer Vision**,
-                        I specialize in architecting LLM-powered applications using RAG, optimizing machine learning
-                        pipelines, and deploying AI models on cloud platforms like GCP and AWS.
+                        My experience spans fine-tuning large language models, building computer vision pipelines, and deploying scalable ML systems on GCP and AWS. 
+                        Previously recognized as a top 1% AI intern at Microsoft India, I'm comfortable working across the full stack, from model development to cloud deployment.
                     </p>
 
                     <div className="interests">
