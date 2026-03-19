@@ -32,7 +32,7 @@ const About = () => {
                 <div className="about-text">
                     <p>
                         I'm an AI Engineer and Generative AI Developer completing my MS in Artificial Intelligence at the University of North Texas (GPA: 4.0, May 2026). 
-                        As a Graduate Research Assistant, I build and deploy LLM-based systems on GCP turning research into production-ready AI.
+                        As a Graduate Research Assistant, I build and deploy LLM-based systems on AWS and GCP turning research into production-ready AI.
                     </p>
                     <p>
                         My experience spans fine-tuning large language models, building computer vision pipelines, and deploying scalable ML systems on GCP and AWS. 
