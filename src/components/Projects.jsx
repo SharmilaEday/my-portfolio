@@ -41,7 +41,7 @@ const Projects = () => {
         }
     ];
 
-    const categories = ['All', 'GenAI', 'Healthcare', 'ML', 'Data Viz'];
+    const categories = ['All', 'NLP', 'GenAI', 'Machine Learning','Computer Vision', 'Data Visualisation'];
 
     const filteredProjects = filter === 'All'
         ? projects
