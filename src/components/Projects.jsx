@@ -42,7 +42,7 @@ const Projects = () => {
         {
             id: 4,
             title: "Passenger Outcome Prediction",
-            category: "Machine Learning",
+            category: ["Machine Learning"],
             desc: "End-to-end ML pipeline on the Spaceship Titanic dataset engineered Total Expenses and Cabin features, compared Logistic Regression vs CatBoost, deployed ensemble via Streamlit for live inference.",
             tech: ["CatBoost", "Scikit-Learn", "Streamlit"],
             icon: <Layout />,
@@ -86,7 +86,7 @@ const Projects = () => {
         {
             id: 8,
             title: "Network Flow Optimization",
-            category: "Machine Learning",
+            category: ["Machine Learning"],
             desc: "Simulated annealing heuristic for directed network flow, benchmarked against Edmonds-Karp with probabilistic path selection, scaled to 1,000-node graphs with sparse connectivity handling.",
             tech: ["Python", "Simulated Annealing"],
             icon: <Layout />,
