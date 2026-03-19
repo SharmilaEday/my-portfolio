@@ -100,8 +100,8 @@ const Projects = () => {
     const categories = ['All', 'NLP', 'GenAI', 'Machine Learning','Computer Vision', 'Data Visualisation'];
 
     const filteredProjects = filter === 'All'
-        ? projects
-        : projects.filter(p => p.category === filter);
+    ? projects
+    : projects.filter(p => p.category.includes(filter));
 
     return (
         <section className="projects" id="projects">
@@ -131,7 +131,7 @@ const Projects = () => {
                         </div>
 
                         <div className="project-body">
-                            <span className="project-category">{project.category}</span>
+                            <span className="project-category">{project.categories.join(' · ')}</span>
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-desc">{project.desc}</p>
 
