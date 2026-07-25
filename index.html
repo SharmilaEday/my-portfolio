@@ -3,17 +3,36 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- Fixed asset path relative to /my-portfolio/ -->
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sharmila Eday | AI Engineer & GenAI Developer</title>
+  
+  <title>Sharmila Eday | AI Systems & Data Engineer</title>
+  <meta name="description" content="Portfolio of Sharmila Eday, AI Systems & Data Engineer specializing in Generative AI, MLOps, PyTorch, and scalable data infrastructure." />
+
+  <!-- Open Graph Meta Tags (Generates rich preview cards when shared on LinkedIn, X, or email) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sharmila Eday | AI Systems & Data Engineer" />
+  <meta property="og:description" content="M.S. in Artificial Intelligence | Generative AI, MLOps, and Data Infrastructure." />
+  <meta property="og:url" content="https://sharmilaeday.github.io/my-portfolio/" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Structured fallback for crawlers, scrapers, and preview bots before React mounts -->
+    <main style="padding: 2rem; font-family: 'Inter', sans-serif; display: none;">
+      <h1>Sharmila Eday</h1>
+      <h2>AI Systems & Data Engineer</h2>
+      <p>Specializing in Generative AI, MLOps, LLM orchestration, PyTorch, and scalable data pipelines.</p>
+      <p>Education: Master of Science in Artificial Intelligence (University of North Texas)</p>
+    </main>
+  </div>
+
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
